@@ -21,6 +21,7 @@ def crawl_data():
                     file.write(row_text)
                     file.write('\n')
                     row_text = ''
+                    row_text += all_text[i]
                 else:
                     row_text += all_text[i]
             if row_text != '':
